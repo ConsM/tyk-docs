@@ -41,7 +41,11 @@
         <img src="/docs/images/icon-documentation.svg" width="0" height="0" alt="Documentation">
         Documentation
       </h1>
-      
+      <select onchange="if (this.value) window.location.href=this.value" id="language_switch">
+        <option>Language</option>
+        <option value="/docs/">English</option>
+        <option value="/docs/ko">Korean</option>
+      </select>
       <nav class="hero-text f-16">
         <form class="search documentation-search f-12 roboto">
           <input type="text" class="searchBox" id="q" placeholder="Search..." data-turbolinks-permanent>
@@ -55,7 +59,7 @@
                 <span>Search by</span>
               </div>
             </div>    
-      
+
         </form>
       </nav>
     </div>   

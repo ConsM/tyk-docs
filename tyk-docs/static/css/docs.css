@@ -25,6 +25,12 @@ height:90px;
 margin:-90px 0 0;
 }
 
+#language_switch {
+  color: black;
+  float: right;
+  margin-top: 30px;
+}
+
 /* Hero image */
 .hero-sidebyside img{ margin-right: 20px; width: 45px; margin-top: 10px;}
 .hero-sidebyside h1, .hero-sidebyside .hero-text {margin-top: 10px;}

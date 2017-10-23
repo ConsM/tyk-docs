@@ -3,6 +3,28 @@ languageCode = "en-gb"
 title = "Tyk Documentation"
 theme = "tykio"
 MetaDataFormat = "yaml"
+
+DefaultContentLanguage = "en"
+
+[Languages]
+[Languages.en]
+title = "My blog"
+
+[[languages.en.menu.main]]
+url    = "/"
+name   = "Home"
+weight = 0
+
+
+[Languages.ko]
+copyright = "Korea"
+title = "Korean Title"
+
+[[languages.de.menu.main]]
+url    = "/ko"
+name   = "Korean here"
+weight = 0
+
 [blackfriday]
    plainIDAnchors = true
    hrefTargetBlank = true
