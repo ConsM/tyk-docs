@@ -5,7 +5,7 @@ menu:
   main:
     parent: "Get started Korean"
 weight: 1
-url: "/get-started/with-tyk-cloud/ko"
+url: "/ko-kr/get-started/with-tyk-cloud/"
 ---
 
 ### Tyk Cloud 란 무엇입니까?

@@ -2,7 +2,7 @@
 title: Log Data - 로그 데이터
 weight: 120
 menu: "main"
-url: "/log-data/ko"
+url: "/ko-kr/log-data/"
 ---
 
 ## <a name="logging"> </a> 로깅

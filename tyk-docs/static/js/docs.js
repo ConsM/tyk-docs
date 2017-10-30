@@ -145,4 +145,10 @@ $(document).ready(function(e){
 
 	$('[class^="language"]').copyToClipboard();
 
+	$("#language_switch").val(window.localStorage.getItem("language_switch"));
+
+  $("#language_switch").on('change',function(e){      
+  	window.localStorage.setItem("language_switch", $("#language_switch option:selected").val()); 
+  });
+
 });

@@ -5,6 +5,6 @@ menu:
   main:
     parent: "Get started Korean"
 weight: 5
-url: "/get-started/with-tyk-hybrid/ko"
+url: "/ko-kr/get-started/with-tyk-hybrid"
 ---
 # Korean

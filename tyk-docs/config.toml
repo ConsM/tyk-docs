@@ -4,27 +4,18 @@ title = "Tyk Documentation"
 theme = "tykio"
 MetaDataFormat = "yaml"
 
-DefaultContentLanguage = "en"
+DefaultContentLanguage = "en-gb"
 
 [Languages]
+
 [Languages.en]
-title = "My blog"
-
-[[languages.en.menu.main]]
-url    = "/"
-name   = "Home"
-weight = 0
-
+	[[languages.en.menu.main]]
+		url = "/en-gb/"
 
 [Languages.ko]
-copyright = "Korea"
-title = "Korean Title"
-
-[[languages.de.menu.main]]
-url    = "/ko"
-name   = "Korean here"
-weight = 0
+	[[languages.de.menu.main]]
+		url = "/ko-kr/"
 
 [blackfriday]
-   plainIDAnchors = true
-   hrefTargetBlank = true
+ plainIDAnchors = true
+ hrefTargetBlank = true

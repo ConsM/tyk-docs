@@ -5,7 +5,7 @@ diffTitleName: Tyk 선적 서류 비치
 menu:
   main:
     name: Documentation - 선적 서류 비치
-url: "/ko"
+url: "/ko-kr/"
 weight: 1
 diffTitle: true
 ---
