@@ -9,11 +9,68 @@ DefaultContentLanguage = "en-gb"
 [Languages]
 
 [Languages.en]
+
+[Languages.en.params]
+	title = "Tyk Documentation"
+	documentation = "Documentation"
+	edit = "Edit in Github"
+	print = "Print"
+	return = "Return to top"
+	features = "Features"
+	outofbox = "Out of the Box"
+	plugins = "Plugins"
+	benchmarks = "Benchmarks"
+	products = "Products"
+	cloud = "Cloud"
+	onpremises = "On-Premises"
+	hybrid = "Hybrid"
+	enterprise = "Enterprise"
+	help = "Help"
+	question = "Ask a Question"
+	bug = "Raise a Bug"
+	roadmap = "Open Roadmap"
+	about = "About"
+	team = "Team"
+	contact = "Contact"
+	blog = "Blog"
+	legal = "Legal"
+	tc = "Terms & Conditions"
+	privacypolicy = "Privacy Policy"
+
 	[[languages.en.menu.main]]
 		url = "/en-gb/"
 
 [Languages.ko]
-	[[languages.de.menu.main]]
+
+	[Languages.ko.params]
+		title = "Tyk Documentation"
+		documentation = "Documentation"
+		edit = "Edit"
+		print = "Print"
+		return = "Return to top"
+		copyright = "Copyright"
+		features = "Features"
+		outofbox = "Out of the Box"
+		plugins = "Plugins"
+		benchmarks = "Benchmarks"
+		products = "Products"
+		cloud = "Cloud"
+		onpremises = "On-Premises"
+		hybrid = "Hybrid"
+		enterprise = "Enterprise"
+		help = "Help"
+		question = "Ask a Question"
+		bug = "Raise a Bug"
+		roadmap = "Open Roadmap"
+		about = "About"
+		team = "Team"
+		contact = "Contact"
+		blog = "Blog"
+		legal = "Legal"
+		tc = "Terms & Conditions"
+		privacypolicy = "Privacy Policy"
+
+	[[languages.ko.menu.main]]
 		url = "/ko-kr/"
 
 [blackfriday]

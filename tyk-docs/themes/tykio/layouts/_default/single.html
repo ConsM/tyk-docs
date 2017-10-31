@@ -7,7 +7,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> {{ .Title }}</title>
+  <title> {{ .Site.Language.Params.params.title }}</title>
 
   <link rel='dns-prefetch' href='//ajax.googleapis.com' />
 
@@ -39,7 +39,7 @@
     <div class="hero-sidebyside">
       <h1 id="doc-icon">
         <img src="/docs/images/icon-documentation.svg" width="0" height="0" alt="Documentation">
-        Documentation
+        {{ .Site.Language.Params.params.documentation }}
       </h1>
       <select onchange="if (this.value) window.location.href=this.value" id="language_switch">
         <option value="">Choose your language</option>
@@ -80,8 +80,8 @@
   <article class="page-content wysiwyg">
  
     <nav class="docs-share-print share-print f-14 bold ucase">
-      <a href="#" class="icon-print" data-print><span>Print</span></a>
-      <a class="button grey medium suggest-edit icon-github" target="_blank" >Edit on GitHub</a>
+      <a href="#" class="icon-print" data-print><span>{{ .Site.Language.Params.params.print }}</span></a>
+      <a class="button grey medium suggest-edit icon-github" target="_blank" >{{ .Site.Language.Params.params.edit }}</a>
     </nav>
     <h1>{{ if .Params.diffTitle }}
           {{ .Params.diffTitleName }}
@@ -103,7 +103,7 @@
     </nav>
     
     <div class="return-top">
-    <a href="javascript:" class="button grey medium bottom">Return to Top</a>
+    <a href="javascript:" class="button grey medium bottom">{{ .Site.Language.Params.params.return }}</a>
     </div>
 
     <a href="javascript:" class="icon-right" id="return-to-top"></a>
@@ -118,39 +118,39 @@
   <div class="container clear">
     
     <nav class="footer-menu f-12">
-      <h3 class="f-13">Features</h3>
-        <a href="/features/">Out of the box</a>
-        <a href="/features/extend-tyk/">Plugins</a>
-        <a href="/features/tyk-benchmarks/">Benchmarks</a>
+      <h3 class="f-13">{{ .Site.Language.Params.params.features }}</h3>
+        <a href="/features/">{{ .Site.Language.Params.params.outofbox }}</a>
+        <a href="/features/extend-tyk/">{{ .Site.Language.Params.params.plugins }}</a>
+        <a href="/features/tyk-benchmarks/">{{ .Site.Language.Params.params.benchmarks }}</a>
     </nav>
 
     <nav class="footer-menu f-12">
-      <h3 class="f-13">Products</h3>
-        <a href="/api-gateway/cloud/">Cloud</a>
-        <a href="/api-gateway/on-premise/">On-Premises</a>
-        <a href="/api-gateway/hybrid/">Hybrid</a>
-        <a href="/api-gateway/enterprise/">Enterprise</a>
+      <h3 class="f-13">{{ .Site.Language.Params.params.products }}</h3>
+        <a href="/api-gateway/cloud/">{{ .Site.Language.Params.params.cloud }}</a>
+        <a href="/api-gateway/on-premise/">{{ .Site.Language.Params.params.onpremises }}</a>
+        <a href="/api-gateway/hybrid/">{{ .Site.Language.Params.params.hybrid }}</a>
+        <a href="/api-gateway/enterprise/">{{ .Site.Language.Params.params.enterprise }}</a>
     </nav>
 
     <nav class="footer-menu f-12">
-      <h3 class="f-13">Help</h3>
-        <a href="https://community.tyk.io/" target="_blank">Ask a Question</a>
-        <a href="/helpdesk/">Helpdesk</a>
-        <a href="https://github.com/TykTechnologies/tyk/issues" target="_blank">Raise a Bug</a>
-        <a href="https://trello.com/b/59d5kAZ5/tyk-api-gateway-roadmap" target="_blank">Open Roadmap</a>
+      <h3 class="f-13">{{ .Site.Language.Params.params.help }}</h3>
+        <a href="https://community.tyk.io/" target="_blank">{{ .Site.Language.Params.params.question }}</a>
+        <a href="/helpdesk/">{{ .Site.Language.Params.params.helpdesk }}</a>
+        <a href="https://github.com/TykTechnologies/tyk/issues" target="_blank">{{ .Site.Language.Params.params.bug }}</a>
+        <a href="https://trello.com/b/59d5kAZ5/tyk-api-gateway-roadmap" target="_blank">{{ .Site.Language.Params.params.roadmap }}</a>
     </nav>
 
     <nav class="footer-menu f-12">
-      <h3 class="f-13">About</h3>
-        <a href="/about/team/">Team</a>
-        <a href="/#contact">Contact</a>
-        <a href="/blog/">Blog</a>
+      <h3 class="f-13">{{ .Site.Language.Params.params.about }}</h3>
+        <a href="/about/team/">{{ .Site.Language.Params.params.team }}</a>
+        <a href="/#contact">{{ .Site.Language.Params.params.contact }}</a>
+        <a href="/blog/">{{ .Site.Language.Params.params.blog }}</a>
     </nav>
 
     <nav class="footer-menu f-12">
-      <h3 class="f-13">Legal</h3>
-        <a href="/terms-and-conditions/">Terms &amp; Conditions</a>
-        <a href="/privacy-policy/">Privacy Policy</a>
+      <h3 class="f-13">{{ .Site.Language.Params.params.legal }}</h3>
+        <a href="/terms-and-conditions/">{{ .Site.Language.Params.params.tc }}</a>
+        <a href="/privacy-policy/">{{ .Site.Language.Params.params.privacypolicy }}</a>
     </nav>
 
     <nav class="footer-social">
@@ -163,6 +163,7 @@
   </div>
   
 </footer>
+
   <script>
       (function(b, o, i, l, e, r) {
           b.GoogleAnalyticsObject = l;

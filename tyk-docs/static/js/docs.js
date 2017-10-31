@@ -97,6 +97,8 @@ if (!window.debCfn) {
 
 $(document).ready(function(e){
 
+	var getURL = location.pathname.split('/')[2];
+
 	$.fn.copyToClipboard = function() {
 
 		return this.each(function($elem) {
@@ -150,5 +152,9 @@ $(document).ready(function(e){
   $("#language_switch").on('change',function(e){      
   	window.localStorage.setItem("language_switch", $("#language_switch option:selected").val()); 
   });
+
+  if (getURL !== '') {
+  	document.getElementsByTagName('html')[0].setAttribute('lang',getURL);
+	}
 
 });
