@@ -1,16 +1,14 @@
 var doNav = function() {
 	var currentPage = location.pathname,
 		currentPageGH = currentPage.replace(/\/$/, ""),
-		githubIndexLink = currentPage.replace(/\/docs/, "/"),
-		githubCustomLink = currentPageGH.replace(/\/docs/, "/"),
-		githubKOIndexLink = currentPage.replace(/\/docs\/ko-kr/, "/"),
-		githubKOCustomLink = currentPageGH.replace(/\/docs\/ko-kr/, "/"),
+		githubIndexLink = currentPage.replace(/docs(\/\w{2}-\w{2,3})*/, "/"),
+		githubCustomLink = currentPageGH.replace(/docs(\/\w{2}-\w{2,3})*/, "/"),
+		githubKOIndexLink = currentPage.replace(/docs(\/\w{2}-\w{2,3})*/, "/"),
+		githubKOCustomLink = currentPageGH.replace(/docs(\/\w{2}-\w{2,3})*/, "/"),
 		prevPage, nextPage, currentPageIndex,
 		troubleshootingURL = /\/docs\/troubleshooting\//;
 		faqURL = /\/docs\/frequently-asked-questions\//;
-		links = $('.st-treed a'),
-		getURL = location.pathname,
-    langCode = getURL.split('/')[2];
+		links = $('.st-treed a');
 
 	function getCurrentPageIndex(arr, page) {
 		var i;
@@ -50,28 +48,13 @@ var doNav = function() {
 		e.preventDefault();
 
 	    if ( $('.active').hasClass('st-open')){
-	    	if (langCode == 'ko-kr') {
-	    		window.open("https://github.com/TykTechnologies/tyk-docs/tree/master/tyk-docs/content" + githubKOIndexLink + 'index.ko.md', "_blank");
-	    	}
-	    	else {
-					window.open("https://github.com/TykTechnologies/tyk-docs/tree/master/tyk-docs/content" + githubIndexLink + 'index.md', "_blank");
-				}
+				window.open("https://github.com/TykTechnologies/tyk-docs/tree/master/tyk-docs/content" + githubIndexLink + 'index.md', "_blank");
 			} 
 			else if ( $('.active').hasClass('st-file') && $('.active').closest('.st-open').length === 0) {
-				if (langCode == 'ko-kr') {
-					window.open("https://github.com/TykTechnologies/tyk-docs/tree/master/tyk-docs/content" + githubKOIndexLink + 'index.ko.md', "_blank");
-				}
-				else {
-					window.open("https://github.com/TykTechnologies/tyk-docs/tree/master/tyk-docs/content" + githubIndexLink + 'index.md', "_blank");
-				}
+				window.open("https://github.com/TykTechnologies/tyk-docs/tree/master/tyk-docs/content" + githubIndexLink + 'index.md', "_blank");
 			} 
 			else if ( $('.active').hasClass('st-file') ) {
-				if (langCode == 'ko-kr') {
-					window.open("https://github.com/TykTechnologies/tyk-docs/tree/master/tyk-docs/content" + githubKOCustomLink + "ko.md", "_blank");
-				}
-				else {
-					window.open("https://github.com/TykTechnologies/tyk-docs/tree/master/tyk-docs/content" + githubCustomLink + ".md", "_blank");
-				}
+				window.open("https://github.com/TykTechnologies/tyk-docs/tree/master/tyk-docs/content" + githubCustomLink + ".md", "_blank");
 			}
 	});
 

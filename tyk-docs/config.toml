@@ -40,9 +40,9 @@ DefaultContentLanguage = "en-gb"
 	[[languages.en.menu.main]]
 		url = "/en-gb/"
 
-[Languages.ko]
+[Languages.ko-kr]
 
-	[Languages.ko.params]
+	[Languages.ko-kr.params]
 		title = "Tyk Documentation"
 		documentation = "Documentation"
 		edit = "Edit"
@@ -70,7 +70,7 @@ DefaultContentLanguage = "en-gb"
 		tc = "Terms & Conditions"
 		privacypolicy = "Privacy Policy"
 
-	[[languages.ko.menu.main]]
+	[[languages.ko-kr.menu.main]]
 		url = "/ko-kr/"
 
 [blackfriday]
